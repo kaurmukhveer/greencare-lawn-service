@@ -24,6 +24,11 @@ function BookingForm() {
 
     console.log(formData);
 
+    localStorage.setItem(
+    "currentBooking",
+    JSON.stringify(formData)
+    );
+
     navigate("/confirmation", {
     state: {
     service: formData.service,

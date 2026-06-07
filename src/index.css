@@ -269,3 +269,63 @@ body {
 .confirmation-card button:hover {
   background: #256628;
 }
+
+
+
+.admin-page {
+  max-width: 900px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+.admin-page h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #1565c0;
+}
+
+.admin-card {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+}
+
+.admin-card p {
+  margin-top: 10px;
+}
+
+.admin-btn {
+  margin-top: 20px;
+  background: #1565c0;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.status-pending {
+  margin-top: 20px;
+  display: inline-block;
+  background: #f59e0b;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.status-confirmed {
+  margin-top: 20px;
+  display: inline-block;
+  background: #22c55e;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.success-message {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #444;
+}
