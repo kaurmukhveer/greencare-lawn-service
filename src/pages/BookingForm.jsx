@@ -5,6 +5,7 @@ function BookingForm() {
   const navigate = useNavigate();
 
   const [formData, setFormData] = useState({
+    service: "Lawn Aeration",
     name: "",
     address: "",
     phone: "",
@@ -23,18 +24,38 @@ function BookingForm() {
 
     console.log(formData);
 
-    navigate("/confirmation");
+    navigate("/confirmation", {
+    state: {
+    service: formData.service,
+    name: formData.name,
+    date: formData.date,
+    },
+    });
   };
 
   return (
     <div className="form-page">
-      <h1>Book Lawn Aeration</h1>
+      <h1>Book Lawn Services</h1>
 
       <p className="form-description">
         Please provide your details to schedule service.
       </p>
 
       <form className="booking-form" onSubmit={handleSubmit}>
+
+        <label>Service</label>
+        <select
+          name="service"
+          value={formData.service}
+          onChange={handleChange}
+          required
+        >
+            <option value="Lawn Aeration">Lawn Aeration</option>
+            <option value="Overseeding">Overseeding</option>
+            <option value="Fertilizing">Fertilizing</option>
+            <option value="Maintenance">Maintenance</option>
+        </select>
+
         <label>Name</label>
         <input
           type="text"
