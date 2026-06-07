@@ -103,6 +103,11 @@ function Home() {
     Mon–Fri: 8:00 AM – 6:00 PM
     </p>
 
+
+  <p className="designer-note">
+    Designed by Mukhveer Kaur
+  </p>
+
   <p>© 2026 GreenCare Lawn Services</p>
 </footer>
 

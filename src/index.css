@@ -345,3 +345,15 @@ body {
 .footer p {
   margin: 6px 0;
 }
+
+.designer-note {
+  font-size: 0.9rem;
+  opacity: 0.8;
+  margin-top: 10px;
+}
+
+.prototype-note {
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin-top: 15px;
+}
