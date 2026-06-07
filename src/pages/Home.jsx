@@ -81,16 +81,33 @@ function Home() {
         </Link>
       </section>
 
-      <section className="admin-demo">
-        <h3>Admin Demo</h3>
+    <section className="admin-demo">
+    <h3>Admin Demo</h3>
 
-        <Link to="/admin">
-          <button className="secondary-btn">
-            Open Admin Dashboard
-          </button>
-        </Link>
-      </section>
-    </div>
+    <Link to="/admin">
+    <button className="secondary-btn">
+      Open Admin Dashboard
+    </button>
+    </Link>
+    </section>
+
+    <footer className="footer">
+    <h3>GreenCare Lawn Services</h3>
+
+    <p>📍 Ottawa, Ontario</p>
+    <p>📞 (613) 555-1234</p>
+    <p>✉ info@greencarelawn.ca</p>
+
+    <p>
+    <strong>Hours:</strong><br />
+    Mon–Fri: 8:00 AM – 6:00 PM
+    </p>
+
+  <p>© 2026 GreenCare Lawn Services</p>
+</footer>
+
+</div>
+
   );
 }
 
