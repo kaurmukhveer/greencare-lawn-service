@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 function BookingDetails() {
-    const status = localStorage.getItem("bookingStatus") || "PENDING";
+    
   const booking =
     JSON.parse(localStorage.getItem("currentBooking")) || {
       name: "Sarah Johnson",
@@ -35,17 +35,13 @@ function BookingDetails() {
         <p>
           <strong>Date:</strong> {booking.date}
         </p>
+
+        <p>
+          <strong>Status:</strong> PENDING REVIEW
+        </p>
        
 
-        {status === "CONFIRMED" ? (
-        <div className="status-confirmed">
-         CONFIRMED
-         </div>
-) : (
-        <div className="status-pending">
-        PENDING REVIEW
-        </div>
-)}
+     
 
         <Link to="/admin/confirmed">
           <button className="admin-btn">
