@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 
 function BookingDetails() {
+    const status = localStorage.getItem("bookingStatus") || "PENDING";
   const booking =
     JSON.parse(localStorage.getItem("currentBooking")) || {
       name: "Sarah Johnson",
@@ -34,8 +35,7 @@ function BookingDetails() {
         <p>
           <strong>Date:</strong> {booking.date}
         </p>
-        const status =
-        localStorage.getItem("bookingStatus") || "PENDING REVIEW";
+       
 
         {status === "CONFIRMED" ? (
         <div className="status-confirmed">

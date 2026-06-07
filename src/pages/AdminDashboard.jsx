@@ -1,9 +1,8 @@
 import { Link } from "react-router-dom";
 
 function AdminDashboard() {
-    const status =
-    localStorage.getItem("bookingStatus") || "PENDING REVIEW";
-    
+   
+
     const booking =     
       JSON.parse(localStorage.getItem("currentBooking")) || {
       name: "Sarah Johnson",
@@ -27,7 +26,7 @@ function AdminDashboard() {
         </p>
 
         <p>
-          <strong>Status:</strong> {status}
+          <strong>Date:</strong> {booking.date}
         </p>
 
         <Link to="/admin/details">
